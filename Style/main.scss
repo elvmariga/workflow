@@ -1,0 +1,343 @@
+.bg-purple{
+    background-color: #616BF2;
+}
+
+.bg-yellow{
+    background-color: #F5A00D;
+}
+.bg-green{
+    background-color: #10B681;
+}
+
+.bg-grey{
+    background-color: #E6E7EB;
+}
+
+.home:hover, .myTask:hover, .recent:hover{
+    background-color: #E6E7EB;
+}
+.home:active{
+    background-color: #E6E7EB;
+}
+
+body{
+    .main{
+        display: grid;
+        grid-template-columns: 0.2fr 1fr;
+        //margin-left: 50px;
+        height: 100vh;
+
+        .sidebar{
+           
+            background-color: #F3F4F6;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;;
+            gap: 10px;
+            align-items: start;
+            
+            
+
+
+            .logo{
+                width: 100%;
+              // align-self: center;
+            }
+            .user{
+                display: flex;
+                align-items: center;
+                width: 100% ;
+               // gap: 10px;
+               .avatar{
+                    img{
+                        width: 48px;
+                        height: 48px;
+                        border-radius: 100%;
+                        margin-right: 20px;
+                        
+                    }
+                }
+            
+
+            .name{
+                width:100%;
+                margin-top: 20px;
+                h3{
+                    margin-bottom: 0px;
+                }
+                h6{
+                    margin-top: 10px;
+                }
+            }
+
+            }
+             .searchTab{
+                width: 100%;
+                margin-bottom: 20px;
+                    .nosubmit {
+                        border: 3px solid #E6E7EB;
+                        border-radius: 10px;
+                        width: 100%;
+                        padding: 9px 4px 9px 40px;
+                         background: transparent url("../images/search.svg") no-repeat 13px center;
+                        background-color: #ffffff;
+                      }
+            }
+            .menu{
+                display: grid;
+                justify-content: stretch;
+                width: 100%;
+                
+                
+
+                .home, .myTask, .recent{
+                    display: flex;
+                    align-items: center;
+                   width: 100%;
+                   gap: 20px;
+                   padding-left: 10px;
+                   border-radius: 10px;
+
+                }
+                // .home{
+                //     background-color: #E6E7EB;
+                    
+                // }
+                
+                
+            }
+
+            .teams{
+                width: 100%;
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+
+                .engineering, .humanResources, .customerSuccess{
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    gap:20px;
+                    padding-left: 10px;
+                }
+            }
+
+        }
+
+        .mainView{
+
+            
+
+            .top{
+
+               // padding: 50px 50px 20px 50px;
+
+                .nav{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 20px 50px 0px 50px;
+
+                    .mainButtons{
+                            
+                        .share{
+                            width: 100px;
+                            height: 50px;
+                            border-radius: 10px;
+                            background-color: #ffffff;
+                            border: 1px solid #E6E7EB;
+                            font-weight: 700;
+                            margin-right: 20px;
+                        }
+
+                        .create{
+                            width: 100px;
+                            height: 50px;
+                            border-radius: 10px;
+                            background-color: #616BF2;
+                            border: none;
+                            color: white;
+                            font-weight: 700;
+                        }
+                    }
+                    
+                }
+                hr{
+                    border: 1px solid #E6E7EB;
+                }
+    
+                .pinned{
+                    padding: 0px 20px 30px 50px;
+                    .pinnedTitle{
+                        text-align: left;
+                    }
+    
+                    .pinnedProject{
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        gap: 20px;
+                        
+    
+                        .tab{
+                            display: flex;
+                            gap: 10px;
+                            align-items: center;
+                            border: 2px solid #E6E7EB;
+                            border-radius: 10px;
+                          
+                            
+                            
+    
+                            .white{
+                                color: #ffffff;
+                            }
+    
+                            .initials{
+                               border-radius: 10px 0px 0px 10px;
+                               flex: 100px;
+                                text-overflow: ellipsis;
+                               justify-items: center;
+                               text-align: center;
+                               
+                            }
+
+                            
+    
+                            .tabDetails{
+                                border-radius: 10px;
+                               
+                                
+                                h3, h4{
+                                    display:  inline-block;
+                                    margin: 5px;   
+                                   overflow: hidden  ;                               
+                                }
+                                h4{
+                                    font-weight: 300;
+                                }
+                            }
+    
+                        }
+                    }
+    
+                }
+            }
+            .middle{
+                display: flex;
+                flex-direction: row;
+                background-color: #F3F4F6;
+                border-top: 5px solid #E6E7EB;
+                border-bottom: 5px solid #E6E7EB;
+                margin-top: 30px;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                
+                .cont1{
+                 display: grid;
+                 grid-template-columns: repeat(3, 1fr);
+                 
+                }
+                
+                h3{
+                    padding: 0px 50px 0px 50px;
+                }
+            }
+
+            .mainDetails{
+                display: flex;         
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .projectTitle{
+                    padding-left: 50px;
+                    img{
+
+                    margin-right: 10px
+                    };
+                }
+               
+                .cont2{
+                    align-self: center;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    // justify-content: center;
+                    // align-items: center;
+                    gap: 20px;
+                   // grid-row: 600px;
+                    //padding: 0px 50px 0px 50px;
+                    
+                    .images{
+                        align-self: center;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        place-self: center;
+                        width: 200px;
+                        gap: 20px;
+
+                        .all{
+                            display: grid;
+                            grid-template-columns: repeat(4, 20px);
+                          //  grid-auto-rows: minmax(10px, auto);
+                    
+                            img{
+                                border: 2px solid #E6E7EB;
+                                border-radius: 100%;
+                                width: 24px;
+                                height: 24px;
+                            }
+                        } 
+                    }
+                    .date{
+                        place-self: center;
+                    }
+                    .edit{
+                    place-self:center;
+                        
+                        button{
+                            border: none;
+                            background-color: white;
+                            color: #616BF2;
+                            font-weight: 600;
+                        }
+                    }
+                   }
+            }
+        }
+    }
+}
+
+
+// ================================
+// nkn
+// ================================
+
+body{
+
+   .all{
+       display: flex;
+       position: relative;
+
+       .back{
+          xposition: absolute;
+          z-index:-7;
+           
+       }
+   }
+   .tabs{
+       ul{
+            display: inline-flex;
+            gap: 20px;
+           
+            
+            li{
+                list-style: none;
+                color: black;
+            }
+        }
+
+        .tabs-3,  .tabs-2,  .tabs-4{
+            display: none;
+        }
+       
+   }
+}

@@ -1,0 +1,366 @@
+.bg-purple {
+  background-color: #616BF2;
+}
+
+.bg-yellow {
+  background-color: #F5A00D;
+}
+
+.bg-green {
+  background-color: #10B681;
+}
+
+.bg-grey {
+  background-color: #E6E7EB;
+}
+
+.home:hover, .myTask:hover, .recent:hover {
+  background-color: #E6E7EB;
+}
+
+.home:active {
+  background-color: #E6E7EB;
+}
+
+body .main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.2fr 1fr;
+      grid-template-columns: 0.2fr 1fr;
+  height: 100vh;
+}
+
+body .main .sidebar {
+  background-color: #F3F4F6;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+body .main .sidebar .logo {
+  width: 100%;
+}
+
+body .main .sidebar .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+body .main .sidebar .user .avatar img {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+
+body .main .sidebar .user .name {
+  width: 100%;
+  margin-top: 20px;
+}
+
+body .main .sidebar .user .name h3 {
+  margin-bottom: 0px;
+}
+
+body .main .sidebar .user .name h6 {
+  margin-top: 10px;
+}
+
+body .main .sidebar .searchTab {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+body .main .sidebar .searchTab .nosubmit {
+  border: 3px solid #E6E7EB;
+  border-radius: 10px;
+  width: 100%;
+  padding: 9px 4px 9px 40px;
+  background: transparent url("../images/search.svg") no-repeat 13px center;
+  background-color: #ffffff;
+}
+
+body .main .sidebar .menu {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  width: 100%;
+}
+
+body .main .sidebar .menu .home, body .main .sidebar .menu .myTask, body .main .sidebar .menu .recent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  gap: 20px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+body .main .sidebar .teams {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+body .main .sidebar .teams .engineering, body .main .sidebar .teams .humanResources, body .main .sidebar .teams .customerSuccess {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  gap: 20px;
+  padding-left: 10px;
+}
+
+body .main .mainView .top .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 50px 0px 50px;
+}
+
+body .main .mainView .top .nav .mainButtons .share {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 1px solid #E6E7EB;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+body .main .mainView .top .nav .mainButtons .create {
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #616BF2;
+  border: none;
+  color: white;
+  font-weight: 700;
+}
+
+body .main .mainView .top hr {
+  border: 1px solid #E6E7EB;
+}
+
+body .main .mainView .top .pinned {
+  padding: 0px 20px 30px 50px;
+}
+
+body .main .mainView .top .pinned .pinnedTitle {
+  text-align: left;
+}
+
+body .main .mainView .top .pinned .pinnedProject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+body .main .mainView .top .pinned .pinnedProject .tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #E6E7EB;
+  border-radius: 10px;
+}
+
+body .main .mainView .top .pinned .pinnedProject .tab .white {
+  color: #ffffff;
+}
+
+body .main .mainView .top .pinned .pinnedProject .tab .initials {
+  border-radius: 10px 0px 0px 10px;
+  -webkit-box-flex: 100px;
+      -ms-flex: 100px;
+          flex: 100px;
+  text-overflow: ellipsis;
+  justify-items: center;
+  text-align: center;
+}
+
+body .main .mainView .top .pinned .pinnedProject .tab .tabDetails {
+  border-radius: 10px;
+}
+
+body .main .mainView .top .pinned .pinnedProject .tab .tabDetails h3, body .main .mainView .top .pinned .pinnedProject .tab .tabDetails h4 {
+  display: inline-block;
+  margin: 5px;
+  overflow: hidden;
+}
+
+body .main .mainView .top .pinned .pinnedProject .tab .tabDetails h4 {
+  font-weight: 300;
+}
+
+body .main .mainView .middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #F3F4F6;
+  border-top: 5px solid #E6E7EB;
+  border-bottom: 5px solid #E6E7EB;
+  margin-top: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .main .mainView .middle .cont1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+body .main .mainView .middle h3 {
+  padding: 0px 50px 0px 50px;
+}
+
+body .main .mainView .mainDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .main .mainView .mainDetails .projectTitle {
+  padding-left: 50px;
+}
+
+body .main .mainView .mainDetails .projectTitle img {
+  margin-right: 10px;
+}
+
+body .main .mainView .mainDetails .cont2 {
+  -ms-grid-row-align: center;
+      align-self: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+body .main .mainView .mainDetails .cont2 .images {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  place-self: center;
+  width: 200px;
+  gap: 20px;
+}
+
+body .main .mainView .mainDetails .cont2 .images .all {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (20px)[4];
+      grid-template-columns: repeat(4, 20px);
+}
+
+body .main .mainView .mainDetails .cont2 .images .all img {
+  border: 2px solid #E6E7EB;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+}
+
+body .main .mainView .mainDetails .cont2 .date {
+  place-self: center;
+}
+
+body .main .mainView .mainDetails .cont2 .edit {
+  place-self: center;
+}
+
+body .main .mainView .mainDetails .cont2 .edit button {
+  border: none;
+  background-color: white;
+  color: #616BF2;
+  font-weight: 600;
+}
+
+body .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+body .all .back {
+  xposition: absolute;
+  z-index: -7;
+}
+
+body .tabs ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 20px;
+}
+
+body .tabs ul li {
+  list-style: none;
+  color: black;
+}
+
+body .tabs .tabs-3, body .tabs .tabs-2, body .tabs .tabs-4 {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */
